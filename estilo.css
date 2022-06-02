@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Orelega+One&family=Oswald:wght@300&family=Ramaraja&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tapestry&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: orange;
+    padding: 3px;
+    height: 16vh;
+}
+
+.logo-principal {
+    width:100px;
+    height: 20%;
+    border-radius: 50%;
+    padding: 9px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 40px;
+}
+
+.nav-list ul {
+    display: flex;
+    margin-top: -75px;
+    margin-left: 40px;
+}
+
+.nav-list li {
+    margin: 10px;
+    list-style: none;
+}
+
+.nav-list a {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #90909c;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.nav-list a:hover{
+ box-shadow: 0px 0px 10px 10px #ccc;    
+}
+
+#inicio {
+    background-image: url(./imagens/ingredientes.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    height: 80vh;
+    border-bottom: 10px solid #ccc;
+    padding: 10px;
+}
+
+#parte-1 {
+    width: 70%;
+    height: 300px;
+    background-color: aliceblue;
+    border-radius: 60px;
+    border: 1px solid black;
+    margin: 170px auto;
+    padding: 10px;
+}
+
+#segunda-parte {
+    background-image: url(./imagens/pizza-quemsomos..jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 80vh;
+    padding: 10px;
+    border-bottom: 10px solid #ccc;
+}
+
+#quem-somos {
+    width: 60%;
+    height: 90%;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.logo-quemsomos {
+    display: none;
+}
+
+.titulo-segundo {
+    color: #fff;
+    font-family: 'Tapestry', cursive;
+    margin-bottom: 10px;
+}
+
+.paragrafo-segundo {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #fff;
+    color: rgb(219, 181, 181);
+    letter-spacing: 1px;
+}
+
+#parte-3 {
+    height: 540px;
+    margin: auto;
+    background-color: rgb(228, 157, 72);
+    border-radius: 50px 140px;
+    margin-bottom: 40px;
+    border: 2px solid black
+}
+
+.carossel {
+    height: 500px;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 7);
+    overflow: hidden;
+    border-radius: 43px;
+}
+
+.carossel ul {
+    list-style: none;
+    display: flex;
+    width: 2000px;
+}
+
+.carossel li {
+    position: relative;
+    animation: slide 10s infinite ease-in-out;
+}
+
+@keyframes slide {
+    0% {
+        left: 0px;
+    }
+
+    20% {
+        left: 0px;
+    }
+
+    50% {
+        left: -300px;
+    }
+
+    30% {
+        left: -300px;
+    }
+
+    60% {
+        left: -600px;
+    }
+
+    90% {
+        left: -900px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+.fotos {
+    width: 300px;
+    height: 400px;
+    outline: 3px solid black;
+    margin: 50px auto;
+}
+
+img {
+    width: 50%;
+    height: 120px;
+}
+
+.logo-whats {
+    width: 17%;
+    height: 11%;
+    margin-top: 500px;
+    position: fixed;
+    transition: all 1s ease;
+    animation: whats 2s infinite ease-in-out ;
+}
+
+  @keyframes whats {
+      0%{
+          transform: translateY(0px);
+      }
+      50%{
+          transform: translateY(-15px);
+      }
+      100%{
+        transform: translateY(0px);
+      }
+  }
+.logo-whats:hover {
+    animation-play-state: paused;
+}
+
+.titulo-inicial {
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+}
+
+.paragrafo-principal {
+    font-size: 20px;
+    margin-top: 30px;
+    text-indent: 15px;
+    letter-spacing: 1px;
+}
+
+footer {
+    background-color: orange;
+    height: 30vh;
+    padding: 10px;
+    height: 30vh;
+}
+
+.rodape {
+    text-align: center;
+}
+
+.rodape li {
+    list-style: none;
+    transition: all 1.5s ease;
+    padding: 14px;
+    margin-top: 10px;
+    width: 300px;
+    margin: 10px auto;
+}
+
+.rodape li:hover {
+    transform: translateY(-10px);
+}
+
+.rodape-a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+}
+.rodape-a:hover{
+    border-bottom: 1px solid white;
+}
+
+.direitos-autorais {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.icones{
+  display: none;
+}
+
+
+#titulo-fotos{
+    width: 80%;
+    margin: 15px auto;
+    background-color: beige;
+}
+#titulo-fotos h1{
+    text-align: center;
+    padding: 10px;
+    font-family:  'Tapestry', cursive;
+    border: 1px dotted black;
+    text-shadow: 1px 1px #e49d48;
+    border-radius: 10px;
+}
+#cardapio{
+    width: 80%;
+    height: 40px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 18px;
+}
+
+#cardapio a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 10px;
+    background-color: red;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    font-family:'Bebas Neue', cursive;
+    letter-spacing: 1px;
+}
+/*Para computador                                             */
+@media screen and (min-width:700px) {
+    .logo-principal {
+        width: 10%;
+        height: 130px;
+        margin-left: 50px;
+    }
+    .nav-list ul{
+        display: flex;
+        margin-top: -100px;
+        margin-left: 40px;
+        margin-right: 100px;
+    }
+
+    .nav-list a {
+        border-radius: 10px;
+        transition: all 1.5s ease;  
+        font-size: 25px;
+    }
+    
+   header{
+       height: 22vh;
+   }
+
+    #inicio {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 100vh;
+    }
+
+    #parte-1 {
+        width: 40%;
+        margin-right: 150px;
+        float: right;
+        margin-top: 10%;
+        height: 300px;
+        background-color: aliceblue;
+        border-radius: 90px;
+        border: 2px solid black;
+    }
+
+    .logo-whats {
+        width: 70px;
+        height: 70px;
+        margin-top: 415px;
+        position: fixed;
+        transition: all 1s ease;
+    }
+
+    .logo-whats:hover {
+        transform: translateY(-10px);
+    }
+
+    #segunda-parte {
+        background-image: url(./imagens/pizza-quemsomos..jpeg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 80vh;
+        padding: 10px;
+        width: 80%;
+        margin: auto;
+    }
+
+    #quem-somos {
+        width: 60%;
+        height: 90%;
+        margin-top: 40px;
+        margin-left: 30px;
+        text-indent: 20px;
+    }
+
+    .logo-quemsomos {
+        display: block;
+        width: 30%;
+        height: 40%;
+        margin-top: 30px;
+        margin-left: 160px;
+        border-radius: 50%;
+    }
+
+    .titulo-segundo {
+        color: #fff;
+        font-family: 'Tapestry', cursive;
+        margin-bottom: 10px;
+    }
+
+    .paragrafo-segundo {
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #fff;
+        color: rgb(219, 181, 181);
+        letter-spacing: 2px;
+    }
+
+    #parte-3 {
+        width: 80%;
+        height: 540px;
+        margin: auto;
+        background-color: rgb(228, 157, 72);
+        border-radius: 50px 140px;
+        margin-bottom: 40px;
+        border: 2px solid black
+    }
+
+    .carossel {
+        height: 500px;
+        width: 600px;
+        margin: 20px auto;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 7);
+        overflow: hidden;
+        border-radius: 43px;
+    }
+
+    .carossel ul {
+        list-style: none;
+        display: flex;
+        width: 2000px;
+    }
+
+    .carossel li {
+        position: relative;
+        animation: slide 10s infinite ease-in-out;
+    }
+
+    @keyframes slide {
+        0% {
+            left: 0px;
+        }
+
+        20% {
+            left: 0px;
+        }
+
+        50% {
+            left: -600px;
+        }
+
+        30% {
+            left: -600px;
+        }
+
+        60% {
+            left: -1200px;
+        }
+
+        90% {
+            left: -1800px;
+        }
+
+        100% {
+            left: 0px;
+        }
+    }
+
+    .fotos {
+        width: 600px;
+        height: 400px;
+        outline: 3px solid black;
+        margin: 50px auto;
+    }
+    .icones{
+        width: 40px;
+        height: 30px;
+        margin-top: -92px;
+        margin-right: 10px;
+        display: flex;
+        float: right;
+    }
+    .icone-insta{
+        width: 40px;
+        height: 30px;
+        background-color: transparent;
+    }
+
+    #titulo-fotos{
+        width: 50%;
+        margin: 15px auto;
+        background-color: beige;
+    }
+    #titulo-fotos h1{
+        text-align: center;
+        padding: 10px;
+        font-family:  'Tapestry', cursive;
+        border: 1px dotted black;
+        text-shadow: 1px 1px orange;
+        border-radius: 10px;
+    }
+    #cardapio{
+        width: 30%;
+        height: 40px;
+        margin: 20px auto;
+        
+        text-align: center;
+        padding: 18px;
+    }
+    
+    #cardapio a{
+        text-decoration: none;
+        font-family:'Bebas Neue', cursive;
+        font-size: 20px;
+        color: #fff;
+        margin-top: 10px;
+        background-color: red;
+        padding: 20px;
+        font-weight: bold;
+        border-radius: 20px;
+    }
+}
