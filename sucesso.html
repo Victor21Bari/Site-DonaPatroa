@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/logo-donapatroa-of.jpeg">
     <title>Sucesso - Formulário</title>
 </head>
 
 <body>
     <div id="sucess">
+        <div class="foto">
+            <img src="./imagens/email.png">
+        </div>
         <div id="text">
             <h1>Email enviado com sucesso!</h1>
             <a href="form.html">Voltar</a>
@@ -22,32 +26,56 @@
             background-image: linear-gradient(to bottom, #FFA500, yellow);
             background-repeat: no-repeat;
             background-size: 100%;
+            font-family: 'Times New Roman', Times, serif;
         }
 
         #sucess {
-            width: 70%;
-            height: 40vh;
+            width: 40vw;
+            height: 50vh;
             background-color: rgb(228, 157, 72);
             margin: 30px auto;
             text-align: center;
             padding: 10px;
             box-shadow: 0px 0px 10px black;
+            display: flex;
+            flex-direction: column;
         }
 
         a {
-            font-size: 30px;
+            font-size: 20px;
             text-decoration: none;
-            background-color: #FFA500;
+            background-color: #D79925;
             padding: 20px;
             color: black;
             border-radius: 20px;
         }
-        a:hover{
+
+        
+
+        a:hover {
             background-color: orange;
         }
 
-        h1{
-            margin-bottom: 100px;
+        #text {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .foto {
+            height: 50%;
+            flex-grow: 1;
+        }
+
+        img {
+            margin: auto;
+            width: 80%;
+            height: 100%;
+        }
+
+        @media only screen and (max-width:800px){
+            #sucess{
+                width: 90vw;
+            }
         }
     </style>
 </body>
