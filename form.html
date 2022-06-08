@@ -21,20 +21,21 @@
         </div>
 
         <div class="fomrulario">
-            <form action="" method="post">
+            <form action="https://formsubmit.co/donapatroaacontato@gmail.com" method="POST">
                 <div class="enunciado">
                     <h1>Formulário</h1>
                     <p>Envie sua dúvida através desse formulário</p>
                 </div>
                 <div class="one">
+                    <input type="hidden" name="_next" value="https://victor21bari.github.io/Site-DonaPatroa/sucesso.html">
+                    <input type="hidden" name="_autoresponse" value="Recebemos a sua mensagem, logo mais nossa equipe entrará em contato.">
                     <label>Nome</label>
                     <input type="text" name="nome" placeholder="Digite o seu nome e sobrenome" required>
                     <label>Email</label>
                     <input type="email" name="email" placeholder="Digite o seu email" required>
                     <label>Mensagem</label>
-                    <textarea style="resize: none;" maxlength="400" placeholder="Escreva sua mensagem"></textarea>
-                    <button type="submit"><a href="sucesso.html">Enviar</a></button>
-   
+                    <textarea style="resize: none;" maxlength="400" placeholder="Escreva sua mensagem" name="mensagem"></textarea>
+                    <button type="submit">Entrar</button>
                 </div>
             </form>
         </div>
