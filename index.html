@@ -78,7 +78,7 @@
         <a href="imagens/Cardápio DonaPatroa (1).png"  target="_blank">Veja o cardapio aqui</a>
     </div>
 
-    <div class="propaganda-semanal">
+    <div id="propaganda-semanal">
         <div class="propaganda">
             <img src="imagens/propaganda-semanal-junho.jpeg" alt="Propaganda semanal">
         </div>
@@ -96,5 +96,19 @@
         </div>
         <p class="direitos-autorais">&copy; DonaPatroa</p>
     </footer>
+
+
+    <script>
+        var div = document.getElementById('propaganda-semanal');
+        var hoje = new Date();
+        var vencimento = new Date(2022, 5, 11);
+       
+        if(hoje > vencimento){
+            div.style.display = 'none';
+        }else{
+            div.style.display = 'block';
+        }
+    </script>
+
 </body>
 </html>
