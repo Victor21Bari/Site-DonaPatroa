@@ -75,12 +75,12 @@
         </div>
     </div>
     <div id="cardapio">
-        <a href="imagens/Cardápio DonaPatroa (1).png"  target="_blank">Veja o cardapio aqui</a>
+        <a href="imagens/Cardápio DonaPatroa (3).png"  target="_blank">Veja o cardapio aqui</a>
     </div>
 
     <div id="propaganda-semanal">
         <div class="propaganda">
-            <img src="imagens/propaganda-semanal-junho.jpeg" alt="Propaganda semanal">
+            <img src="imagens/Propaganda DP - novos Sabores (1).png" alt="Propaganda semanal" id="img-prop">
         </div>
     </div>
 
@@ -97,18 +97,22 @@
         <p class="direitos-autorais">&copy; DonaPatroa</p>
     </footer>
 
-
-    <script>
-        var div = document.getElementById('propaganda-semanal');
-        var hoje = new Date();
-        var vencimento = new Date(2022, 5, 11);
-       
-        if(hoje > vencimento){
-            div.style.display = 'none';
-        }else{
-            div.style.display = 'block';
-        }
-    </script>
+ <!--
+     <script>
+         var div = document.getElementById('propaganda-semanal');
+         var hoje = new Date();
+         var vencimento = new Date(2022, 5, 12);
+         var imgProp = document.getElementById('img-prop')
+ 
+ 
+        
+         if(hoje > vencimento){
+             div.style.display = 'none';
+         }else{
+             div.style.display = 'block';
+         }
+     </script>
+ -->
 
 </body>
 </html>
